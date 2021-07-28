@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Conny und Thomas</title>
+		<link rel="stylesheet" href="style.css" />
+		<!-- <script src="script/jquery.min.js"></script> -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<script src="/bower_components/Arctext.js/js/jquery.arctext.js"></script>
+	</head>
+	<body>
+		<div class="conny-thomas">
+			<div class="header">
+				<h1 class="title">Conny &amp; Thomas</h1>
+				<h2>Moin!</h2>
+			</div>
+			<div class="bubbles">
+				<p class="conny-speech">Ihr seid alle am Arsch!</p>
+				<p class="thomas-speech">Verbinde die Punkte!</p>
+			</div>
+			<div class="images">
+				<img class="conny" src="img/Conny.png" alt="Conny am Telefon" />
+				<img class="thomas" src="img/Thomas_1.png" alt="Thomas mit Alkohol" />
+			</div>
+		</div>
+		<!-- Lucky  -->
+		<div class="lucky">
+			<div class="lucky-bubbles">
+				<p class="lucky-speech-conny">Klick auf Conny!</p>
+				<p class="lucky-speech-thomas">Klick auf Thomas!</p>
+			</div>
+			<img class="lucky-img" src="img/Lucky.png" alt="" />
+		</div>
+		<!-- curved text -->
+		<script>
+			$(".title").arctext({
+				radius: 300,
+				rotate: false,
+			});
+		</script>
+		<script src="index.js"></script>
+	</body>
+</html>

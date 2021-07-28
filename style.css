@@ -1,0 +1,249 @@
+body {
+  /* background-color: rgb(16, 46, 16); */
+  background-image: radial-gradient(rgb(11, 69, 122), rgb(65, 129, 65));
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: rgb(173, 170, 170);
+  font-size: 2rem;
+  letter-spacing: 15px;
+  margin-bottom: 2em;
+  text-align: center;
+}
+
+h2 {
+  color: rgb(228, 243, 23);
+  font-size: 2rem;
+  margin: 0;
+  text-align: center;
+}
+
+.images {
+  display: flex;
+  justify-content: space-around;
+}
+
+img {
+  border-radius: 50%;
+  height: 150px;
+  margin: 0 2.4em;
+  width: 150px;
+}
+
+/* ===== Conny und Thomas ======= */
+
+.conny-thomas {
+  margin-bottom: 1.7em;
+}
+
+.header {
+  margin-top: .5em;
+}
+
+.conny,
+.thomas {
+  cursor: pointer;
+}
+/* ===========
+  bubbles
+  ========== */
+
+  .bubbles {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 1em;
+  }
+
+  /* Thomas */
+
+p.thomas-speech {
+  /* background-color: #fff; */
+  background: linear-gradient(to bottom, #ff0000, #ffa500, #ffff00, #008000, #0000ff, #4b0082, #ee82ee);
+  border: 8px solid rgb(33 52 91);
+  border-radius: 30px;
+  color: #a29999;
+  font-family: sans-serif;
+  font-size: 1.2rem;
+  font-weight: 900;
+  line-height: 1.4em;
+  margin: 59px 15px;
+  padding: 0.7em;
+  position: relative;
+  text-align: center;
+  visibility: hidden;
+  width: 180px;
+}
+
+p.thomas-speech:before,
+p.thomas-speech:after {
+  background: linear-gradient(to bottom, #ff0000, #ffa500, #ffff00, #008000, #0000ff, #4b0082, #ee82ee);
+  content: ' ';
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+
+p.thomas-speech:before {
+  left: 85px;
+  bottom: -50px;
+  border: 25px solid;
+  border-color: rgb(33 52 91) transparent transparent rgb(33 52 91);
+}
+
+/* p.thomas-speech:after {
+  left: 115px;
+  bottom: -30px;
+  border: 15px solid;
+  border-color: #fff transparent transparent #fff;
+} */
+
+/* Conny  */
+
+p.conny-speech {
+  background-color: #fff;
+  background: linear-gradient(to bottom, #ff0000, #ffa500, #ffff00, #008000, #0000ff, #4b0082, #ee82ee);
+  border: 8px solid rgb(33 52 91);
+  border-radius: 30px;
+  color: #a29999;
+  font-family: sans-serif;
+  font-size: 1.2rem;
+  font-weight: 900;
+  left: -5%;
+  line-height: 1.4em;
+  margin: 59px 65px;
+  margin-bottom: 44px;
+  padding: .5em;
+  position: relative;
+  text-align: center;
+  visibility: hidden;
+  width: 180px;
+}
+
+p.conny-speech:before,
+p.conny-speech:after {
+  content: ' ';
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+
+p.conny-speech:before {
+  left: 45%;
+  bottom: -50px;
+  border: 25px solid;
+  border-color: rgb(33 52 91) rgb(33 52 91) transparent transparent;
+}
+
+/* p.conny-speech:after {
+  left: 51%;
+  bottom: -30px;
+  border: 15px solid;
+  border-color: #fff #fff transparent transparent;
+} */
+
+
+/* ==== Lucky ====== */
+
+.lucky-bubbles {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100vw;
+}
+
+.lucky-img {
+  border-radius: 20px;
+  display: block;
+  margin: 2em auto;
+}
+
+
+
+/* Conny-Blase  */
+
+p.lucky-speech-conny {
+  background-color: #fff;
+  border: 8px solid #333;
+  border-radius: 30px;
+  font-family: sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  height: 1.5em;
+  left: -5%;
+  line-height: 1.4em;
+  /* margin: 49px 30px; */
+  margin-left: 1em;
+  padding: .5em;
+  position: relative;
+  text-align: center;
+  visibility: hidden;
+  width: 180px;
+}
+
+
+p.lucky-speech-conny:before,
+p.lucky-speech-conny:after {
+  content: ' ';
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+
+p.lucky-speech-conny:before {
+  left: 45%;
+  bottom: -50px;
+  border: 25px solid;
+  border-color: #333 #333 transparent transparent;
+}
+
+p.lucky-speech-conny:after {
+  left: 52%;
+  bottom: -30px;
+  border: 15px solid;
+  border-color: #fff #fff transparent transparent;
+}
+
+/* Thomas-Blase  */
+
+p.lucky-speech-thomas {
+  background-color: #fff;
+  border: 8px solid #333;
+  border-radius: 30px;
+  font-family: sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  height: 1.5em;
+  line-height: 1.4em;
+  /* margin: 49px 30px; */
+  margin-right: 1em;
+  padding: 0.5em;
+  position: relative;
+  text-align: center;
+  /* transition: 2s; */
+  /* transition-timing-function: ease; */
+  width: 180px;
+}
+
+p.lucky-speech-thomas:before,
+p.lucky-speech-thomas:after {
+  content: ' ';
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+
+p.lucky-speech-thomas:before {
+  left: 106px;
+  bottom: -50px;
+  border: 25px solid;
+  border-color: #333 transparent transparent #333;
+}
+
+p.lucky-speech-thomas:after {
+  left: 115px;
+  bottom: -30px;
+  border: 15px solid;
+  border-color: #fff transparent transparent #fff;
+}
+
